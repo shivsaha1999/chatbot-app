@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --bg-gradient-from: #701a75;
+  --bg-gradient-to: #7e22ce;
+  --text-color: #f1f3f7;
+  --border-color: black/20;
+}
+
+/* Dark mode styles */
+.dark {
+  --bg-gradient-from: #7e22ce;
+  --bg-gradient-to: #4c1d95;
+  --text-color: #f1f3f7;
+  --border-color: white;
+}
+
+.dark .chat-message-container {
+  background: linear-gradient(to right, #0f172a, #0f172a);
+}
+
+.dark .chat-input-area {
+  background: linear-gradient(to right, #0f172a, #0f172a);
+}
+
+.dark .bg-sidebar-color {
+  background: linear-gradient(to right, rgba(126, 34, 206, 0.3), rgba(76, 29, 149, 0.3));
+}
+
+.dark .bg-chatwindow-color {
+  background: rgba(126, 34, 206, 0.3);
+}
+
+.dark .bg-history-color {
+  background: linear-gradient(to right, rgba(112, 26, 117, 0.3), rgba(126, 34, 206, 0.3));
+}
+
+.dark .bg-user-sender {
+  background: #ffffff33;
+}
+
+.dark .bg-bot-sender {
+  background: #ffffff4d;
+}
+
+.dark .text-color {
+  color: white;
+}
+
+.dark .bg-message {
+  background: linear-gradient(to right, #1e3a8a, #5b21b6);
+}
+
+.dark .custom-shadow {
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.6);
+}
+
+/* Light mode styles */
+.light {
+  --bg-gradient-from: #f0abfc;
+  --bg-gradient-to: #d8b4fe;
+  --text-color: #1f2937;
+  --border-color: black/20;
+}
+
+.light .chat-message-container {
+  background: linear-gradient(to right, #d1d5db, #d1d5db);
+}
+
+.light .chat-input-area {
+  background: linear-gradient(to right, #d1d5db, #d1d5db);
+}
+
+.light .bg-sidebar-color {
+  background: linear-gradient(to right, rgba(167, 139, 250, 0.8), rgba(165, 180, 252, 0.8));
+}
+
+.light .bg-chatwindow-color {
+  background: rgba(167, 139, 250, 0.8);
+}
+
+.light .bg-history-color {
+  background: linear-gradient(to right, rgba(240, 171, 252, 0.8), rgba(167, 139, 250, 0.8));
+}
+
+.light .bg-user-sender {
+  background: #00000080;
+}
+
+.light .bg-bot-sender {
+  background: #00000099;
+}
+
+.light .text-color {
+  color: black;
+}
+
+.light .bg-message {
+  background: linear-gradient(to right, #93c5fd, #c4b5fd);
+}
+
+.light .custom-shadow {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+}

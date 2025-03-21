@@ -1,0 +1,34 @@
+/* Custom scrollbar styles */
+/* Light theme scrollbar styles */
+.chat-message-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-message-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.chat-message-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ccc, #aaa);
+    border-radius: 10px;
+}
+
+.chat-message-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #aaa, #888);
+}
+
+/* Dark theme scrollbar styles */
+.dark .chat-message-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.dark .chat-message-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #4d22e8, #3e0396);
+    border-radius: 10px;
+}
+
+.dark .chat-message-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #4c1d95, #3b0d7a); 
+}

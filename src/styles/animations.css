@@ -1,0 +1,94 @@
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(75, 0, 130, 0.7);
+    }
+    70% {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px 10px rgba(75, 0, 130, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(75, 0, 130, 0);
+    }
+  }
+  
+  .recording {
+    animation: pulse 1.5s infinite;
+  }
+  
+  .voice-recorder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .voice-recorder button {
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .voice-recorder .stop {
+    background-color: red;
+    color: white;
+  }
+  
+  .voice-recorder .reset {
+    background-color: gray;
+    color: white;
+  }
+
+@keyframes moveArrow {
+  0% { transform: translateX(0px);}
+  100% { transform: translate(10px);}
+}
+
+.animate-moveArrow {
+  animation: moveArrow 1s infinite alternate ease-in-out;
+}
+
+@keyframes dancing-lines {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.dancing-lines {
+  display: flex;
+  gap: 4px; 
+}
+
+.dancing-lines div {
+  width: 4px;
+  height: 20px;
+  background-color: grey; 
+  animation: dancing-lines 0.5s infinite;
+}
+
+.dancing-lines div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dancing-lines div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.dancing-lines div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.dancing-lines div:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.dancing-lines div:nth-child(5) {
+  animation-delay: 0.4s;
+}
