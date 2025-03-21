@@ -15,7 +15,7 @@ This is a feature-rich ChatBot application built with **React**, **TypeScript**,
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+     git clone https://github.com/shivsaha1999/chatbot-app.git
     cd chatbot-app
     ```
 
